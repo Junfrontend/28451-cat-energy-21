@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html>
+
+<head lang="ru">
+  <meta charset="utf-8">
+  <title>Еда для круглых пухляшей</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="page">
+  <header class="header">
+    <img class="header__logo" src="/img/logo-mobile.png" alt="Иконка-логотип" height="38" width="33">
+    <img class="header__cat-energy" src="/img/text-logo.svg" alt="Текстовый логотип" height="38" width="101"></div>
+    <nav class="header-nav">
+      <ul class="header-nav nav-list">
+        <li class="nav-list__item"><a href="index.html">Главная</li>
+        <li class="nav-list__item"><a href="catalog.html">Каталог продукции</a></li>
+        <li class="nav-list__item"><a href="#">Подбор программы</a></li>
+      </ul>
+    </nav>
+    <button class="header-toggle"><img src="/img/icon_for_header_menu.svg"
+        alt="Иконка для кнопки меню в заголовке"></button>
+  </header>
+  <main>
+    <form class="program-selection-form" action="https://echo.htmlacademy.ru" method="GET">
+      <fieldset class="program-selection-form__about-cat">
+        <legend class="program-selection-form__about-cat__header">Подбор программы</legend>
+        <p class="program-selection-form__about-cat__description">Заполните анкету, и мы подберем <br>
+          программу питания для вашего кота</p>
+        <label class="program-selection-form__about-cat__ask-info">
+          ИМЯ:* <input type="text" required>
+        </label>
+        <label class="program-selection-form__about-cat__ask-info">
+          Вес (кг):* <input type="number" required>
+        </label>
+        <label class="program-selection-form__about-cat__ask-info">
+          Возраст (лет): <input type="number">
+        </label>
+      </fieldset>
+      <fieldset class="program-selection-form__purpose-of-program">
+        <label class="program-selection-form__purpose-of-program-choose">
+          <input type="radio" value="slimming" name="purpose-of-program"> похудение
+        </label>
+        <label class="program-selection-form__purpose-of-program-choose">
+          <input type="radio" value="weight-gain" name="purpose-of-program"> Набор массы
+        </label>
+        <label class="program-selection-form__purpose-of-program-choose">
+          <input type="radio" value="idontknow" name="purpose-of-program"> Не знаю (Нужен ваш совет)
+        </label>
+      </fieldset>
+      <fieldset class="program-selection-form__owner-contacts">
+        <legend class="program-selection-form__owner-contacts__header">Контактные данные <br>
+          (владельца кота)</legend>
+        <div class="green-line"></div>
+        <label class="program-selection-form__about-cat__ask-info">
+          E-mail:* <input type="email" required>
+        </label>
+        <label class="program-selection-form__about-cat__ask-info">
+          Телефон:* <input type="tel" required>
+        </label>
+      </fieldset>
+      <fieldset class="program-selection-form__comment">
+        <legend class="program-selection-form__comment__header">Комментарий</legend>
+        <div class="green-line"></div>
+        <textarea class="program-selection-form__comment__textarea" name="" id="" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+      </fieldset>
+      <fieldset class="program-selection-form__extra">
+        <legend class="program-selection-form__extra__header">Дополнительно</legend>
+        <div class="green-line"></div>
+        <label class="program-selection-form__extra__checkbox">
+          <input type="checkbox"> сахарозаменитель
+        </label>
+        <label class="program-selection-form__extra__checkbox">
+          <input type="checkbox"> питьевая вода
+        </label>
+        <label class="program-selection-form__extra__checkbox">
+          <input type="checkbox"> молоко
+        </label>
+        <label class="program-selection-form__extra__checkbox">
+          <input type="checkbox"> витамины
+        </label>
+      </fieldset>
+      <button class="program-selection-form__send-button">Отправить заявку</button>
+      <p class="program-selection-form__required-field-comment">* — Обязательные поля</p>
+    </form>
+  </main>
+  <footer class="footer">
+    <div class="footer__contacts">
+      <h3 class="footer__contacts-header-invite ">приглашаем
+        к сотрудничеству дилеров!</h3>
+      <p class="footer__contacts-addres">ул. Большая
+        Конюшенная, д. 19/8
+        Санкт-Петербург</p>
+    </div>
+    <div class="footer__map">
+      <!-- <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603441444461!2d30.320872925980453!3d59.93872221965117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1609585820122!5m2!1sru!2sru"
+        width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe> -->
+    </div>
+    <div class="footer__links">
+      <a class="footer__links-link" href="#"><img src="img/text-logo.svg" alt="Картинка с лого" height="24"
+          width="128"></a>
+      <div class="footer__links-social">
+        <a class="footer__links-link" href="www.vk.com">
+          <img src="img/icon_vkontakte.svg" alt="Лого вк" height="16" width="23">
+        </a>
+        <a class="footer__links-link" href="www.Instagram.com">
+          <img src="img/icon_instagram.svg" alt="Лого Instagram" height="16" width="16">
+        </a>
+        <a class="footer__links-link" href="www.facebook.com">
+          <img src="img/icon_facebook.svg" alt="Лого Facebook">
+        </a>
+      </div>
+      <div class="footer__links-htmlacademy">
+        <a class="footer__links-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+          <img src="img/html_academy_logo.png" alt="Лого академии">
+        </a>
+      </div>
+  </footer>
+</body>
+
+</html>
