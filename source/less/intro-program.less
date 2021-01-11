@@ -1,36 +1,94 @@
 .intro-program {
-  background:
-  url("/img/cat-background-mobile.jpg") no-repeat;
+  background: url("/img/cat-background-mobile.png") no-repeat;
   background-color: white;
 }
-.intro-program__background {
-  background:
-  url("/img/green-mask-background.png") no-repeat;
-}
+
 .intro-program__header {
-  font-family: @basic-font;
+  font-family: @basic-font, "Arial", sans-serif;
   font-size: 36px;
   line-height: 36px;
   font-weight: normal;
   color: white;
   margin: 0;
+  padding-top: 27px;
+  text-align: center;
 }
+
 .intro-program__descrptiption {
-  font-family: @basic-font;
+  font-family: @basic-font, "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
   color: white;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 29px;
 }
+
 .intro-program__button {
   border: none;
   background-color: @basic-green;
   color: white;
-  font-family: @basic-font;
+  font-family: @basic-font, "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   width: 280px;
   height: 40px;
+  margin-bottom: 22px;
+}
+
+.intro-program__img-tablet {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .intro-program {
+    background: none;
+    position: relative;
+  }
+
+  .intro-program__header {
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 60px;
+    color: black;
+    text-align: left;
+    margin-left: 86px;
+    margin-top: 2px;
+  }
+
+  .intro-program__descrptiption {
+    font-size: 20px;
+    line-height: 20px;
+    color: black;
+    text-align: left;
+    margin: 0;
+    margin-left: 86px;
+    margin-top: 42px;
+  }
+
+  .intro-program__img {
+    display: none;
+  }
+
+  .intro-program__img-tablet {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .intro-program__button {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    width: 244px;
+    height: 54px;
+    margin-top: 29px;
+    margin-left: 83px;
+    position: absolute;
+    top: 228px;
+    left: 30px;
+  }
 }

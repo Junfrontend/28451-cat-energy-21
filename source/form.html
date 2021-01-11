@@ -7,18 +7,16 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-
 </head>
-
 <body class="page">
   <header class="header">
     <img class="header__logo" src="/img/logo-mobile.png" alt="Иконка-логотип" height="38" width="33">
     <img class="header__cat-energy" src="/img/text-logo.svg" alt="Текстовый логотип" height="38" width="101"></div>
     <nav class="header-nav">
       <ul class="header-nav nav-list">
-        <li class="nav-list__item"><a href="index.html">Главная</li>
+        <li class="nav-list__item"><a href="index.html">Главная</a></li>
         <li class="nav-list__item"><a href="catalog.html">Каталог продукции</a></li>
-        <li class="nav-list__item"><a href="#">Подбор программы</a></li>
+        <li class="nav-list__item"><a>Подбор программы</a></li>
       </ul>
     </nav>
     <button class="header-toggle"><img src="/img/icon_for_header_menu.svg"
@@ -28,16 +26,17 @@
     <form class="program-selection-form" action="https://echo.htmlacademy.ru" method="GET">
       <fieldset class="program-selection-form__about-cat">
         <legend class="program-selection-form__about-cat__header">Подбор программы</legend>
-        <p class="program-selection-form__about-cat__description">Заполните анкету, и мы подберем <br>
-          программу питания для вашего кота</p>
+        <p class="program-selection-form__about-cat__description">
+          Заполните анкету, и мы подберем программу питания для вашего кота
+        </p>
         <label class="program-selection-form__about-cat__ask-info">
-          ИМЯ:* <input type="text" required>
+          ИМЯ:* <input type="text" placeholder="Барсик" required>
         </label>
         <label class="program-selection-form__about-cat__ask-info">
-          Вес (кг):* <input type="number" required>
+          Вес (кг):* <input type="number" placeholder="7" required>
         </label>
         <label class="program-selection-form__about-cat__ask-info">
-          Возраст (лет): <input type="number">
+          Возраст (лет): <input type="number" placeholder="7">
         </label>
       </fieldset>
       <fieldset class="program-selection-form__purpose-of-program">
@@ -52,14 +51,14 @@
         </label>
       </fieldset>
       <fieldset class="program-selection-form__owner-contacts">
-        <legend class="program-selection-form__owner-contacts__header">Контактные данные <br>
+        <legend class="program-selection-form__owner-contacts__header">Контактные данные
           (владельца кота)</legend>
         <div class="green-line"></div>
         <label class="program-selection-form__about-cat__ask-info">
-          E-mail:* <input type="email" required>
+          E-mail:* <input type="email" placeholder="kuklachev@gmail.com" required>
         </label>
         <label class="program-selection-form__about-cat__ask-info">
-          Телефон:* <input type="tel" required>
+          Телефон:* <input type="tel" placeholder="8 (960) 900-60-90" required>
         </label>
       </fieldset>
       <fieldset class="program-selection-form__comment">
@@ -72,16 +71,16 @@
         <legend class="program-selection-form__extra__header">Дополнительно</legend>
         <div class="green-line"></div>
         <label class="program-selection-form__extra__checkbox">
-          <input type="checkbox"> сахарозаменитель
+          <input type="checkbox"> Сахарозаменитель
         </label>
         <label class="program-selection-form__extra__checkbox">
-          <input type="checkbox"> питьевая вода
+          <input type="checkbox"> Питьевая вода
         </label>
         <label class="program-selection-form__extra__checkbox">
-          <input type="checkbox"> молоко
+          <input type="checkbox"> Молоко
         </label>
         <label class="program-selection-form__extra__checkbox">
-          <input type="checkbox"> витамины
+          <input type="checkbox"> Витамины
         </label>
       </fieldset>
       <button class="program-selection-form__send-button">Отправить заявку</button>
@@ -90,11 +89,12 @@
   </main>
   <footer class="footer">
     <div class="footer__contacts">
-      <h3 class="footer__contacts-header-invite ">приглашаем
-        к сотрудничеству дилеров!</h3>
-      <p class="footer__contacts-addres">ул. Большая
-        Конюшенная, д. 19/8
-        Санкт-Петербург</p>
+      <h3 class="footer__contacts-header-invite ">Приглашаем к сотрудничеству дилеров!
+
+      </h3>
+      <p class="footer__contacts-addres">
+        ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+      </p>
     </div>
     <div class="footer__map">
       <!-- <iframe
@@ -123,5 +123,4 @@
       </div>
   </footer>
 </body>
-
 </html>
