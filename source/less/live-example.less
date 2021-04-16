@@ -174,6 +174,7 @@
     line-height: 60px;
     margin-top: 15px;
     margin-bottom: 0;
+    margin-left: 12px;
   }
 
   .live-example {
@@ -189,25 +190,27 @@
     font-size: 16px;
     line-height: 24px;
     margin-top: 35px;
+    margin-left: 12px;
     width: 700px;
   }
 
   .live-example__results {
     width: 366px;
+    margin-left: 11px;
   }
 
-  .results-weight {
+  .results__weight {
     margin: 0;
     padding: 0;
     font-size: 30px;
     line-height: 37px;
     width: 160px;
-    height: 54px;
+    height: 55px;
     margin-top: 24px;
     padding-top: 15px;
   }
 
-  .results-days {
+  .results__days {
     margin: 0;
     padding: 0;
     font-size: 30px;
@@ -218,7 +221,7 @@
     padding-top: 14px;
   }
 
-  .results-weight__descr {
+  .results__weight-descr {
     font-size: 14px;
     line-height: 14px;
     width: 117px;
@@ -226,12 +229,12 @@
     margin-top: 10px;
   }
 
-  .results-days__descr {
+  .results__days-descr {
     font-size: 14px;
     line-height: 14px;
-    width: 137px;
+    width: 127px;
     background: white;
-    margin-top: 10px;
+    margin-top: 12px;
   }
 
   .results__money-spent {
@@ -239,8 +242,8 @@
     line-height: 29px;
     width: 175px;
     text-align: right;
-    margin-top: 29px;
-    margin-left: 167px;
+    margin-top: 32px;
+    margin-left: 147px;
   }
 
   .live-example__before-and-after {
@@ -250,7 +253,7 @@
 
   .live-example__before-and-after_img {
     width: 708px;
-    height: 620px;
+    height: 596px;
   }
 
   .before-and-after {
@@ -312,7 +315,6 @@
     }
   }
 
-
   .before-and-after__toggle-after,
   .before-and-after__toggle-before {
     &:hover {
@@ -335,17 +337,7 @@
     justify-content: flex-start;
     height: 600px;
     position: relative;
-
-    &::after {
-      content: "";
-      width: 1440px;
-      height: 462px;
-      background: #f2f2f2;
-      position: absolute;
-      z-index: -1;
-      top: 138px;
-      left: 0;
-    }
+    padding-left: 110px;
   }
 
   .live-example__header {
@@ -382,11 +374,19 @@
 
   .live-example__before-and-after {
     margin-top: 0;
-    width: 690px;
-    height: 656px;
+    background: linear-gradient(white 23%, #f2f2f2 23%);
     position: absolute;
-    left: 663px;
-    top: -72px;
+    left: 595px;
+    &::after {
+      content: "";
+      display: block;
+      width: 170px;
+      height: 600px;
+      position: absolute;
+      left: 675px;
+      top: 0;
+      background: linear-gradient(white 23%, #f2f2f2 23%);
+    }
   }
 
   .before-and-after__toggle {
@@ -401,7 +401,7 @@
   }
 
   .before-and-after {
-    margin-top: 53px;
+    margin-top: 33px;
     margin-left: 70px;
   }
 }
