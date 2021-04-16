@@ -1,5 +1,6 @@
 .intro-program {
   background: url("/img/cat-background-mobile.png") no-repeat;
+  padding: 0 20px 20px 20px;
   background-color: white;
 }
 
@@ -26,7 +27,7 @@
   margin-bottom: 29px;
 }
 
-.intro-program__button {
+.intro-program__link {
   border: none;
   background-color: @basic-green;
   color: white;
@@ -35,19 +36,36 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 280px;
   height: 40px;
-  margin-bottom: 22px;
+
+  &:hover {
+    background-color: @basic-green-hover-button;
+  }
+
+  &:active,
+  &:focus {
+    background-color: @basic-green-hover-button;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    outline: none;
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
-.intro-program__img-tablet {
-  display: none;
+.intro-program__img {
+  margin: 0 auto;
 }
 
 @media (min-width: 768px) {
   .intro-program {
     background: none;
+    background-color: white;
     position: relative;
+    padding-bottom: 0;
   }
 
   .intro-program__header {
@@ -56,8 +74,9 @@
     line-height: 60px;
     color: black;
     text-align: left;
-    margin-left: 86px;
-    margin-top: 2px;
+    margin-left: 97px;
+    padding-top: 30px;
+    width: 420px;
   }
 
   .intro-program__descrptiption {
@@ -66,20 +85,18 @@
     color: black;
     text-align: left;
     margin: 0;
-    margin-left: 86px;
-    margin-top: 42px;
+    margin-left: 97px;
+    margin-top: 41px;
   }
 
   .intro-program__img {
-    display: none;
+    margin-top: 17px;
+    margin-left: 50px;
+    width: 670px;
+    height: 612px;
   }
 
-  .intro-program__img-tablet {
-    display: block;
-    margin-top: 20px;
-  }
-
-  .intro-program__button {
+  .intro-program__link {
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
@@ -88,7 +105,42 @@
     margin-top: 29px;
     margin-left: 83px;
     position: absolute;
-    top: 228px;
+    top: 231px;
     left: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .intro-program {
+    margin-left: 190px;
+    padding: 0;
+    width: 100%;
+    background: none;
+    height: 555px;
+  }
+
+  .intro-program__header {
+    margin: 0;
+    padding: 0;
+    width: 420px;
+    padding-top: 83px;
+  }
+
+  .intro-program__descrptiption {
+    margin: 0;
+    margin-top: 40px;
+  }
+
+  .intro-program__link {
+    top: 286px;
+    left: -82px;
+  }
+
+  .intro-program__img {
+    width: 552px;
+    height: 500px;
+    position: relative;
+    left: 317px;
+    top: -280px;
   }
 }

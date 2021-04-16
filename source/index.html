@@ -5,182 +5,188 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Еда для очень круглых пухляшей</title>
+  <link rel="stylesheet" href="css/normalize.css" type='text/css'>
   <link rel="stylesheet" href="css/style.css" type='text/css'>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <!-- Подключить normalize -->
 </head>
 
 <body class="page">
   <header class="header">
-    <div class="header__top-logo">
-      <img class="header__logo" src="img/logo-mobile.png" alt="Иконка-логотип" height="38" width="33">
-      <img class="header__cat-energy" src="img/text-logo.svg" alt="Текстовый логотип" height="18" width="101">
-      <img class="header__mix-logo__tablet" src="img/logo-tablet.png" alt="Логотип картинка + текст для планшетов"
-        width="174" height="52">
-      <button class="header-toggle">
-        <img src="img/close-logo.png" alt="Иконка-крестик для кнопки меню в заголовке" width="18" height="18">
-      </button>
+    <div class="header__top-bar">
+      <a>
+        <picture>
+          <source srcset="img/logo-desktop.png" media="(min-width: 1440px)">
+          <source srcset="img/logo-tablet.png" media="(min-width: 768px)">
+          <img class="header__top-bar_logo" src="img/logo-mobile.png" alt="Иконка-логотип" height="38" width="33">
+        </picture>
+        <img class="header__top-bar_cat-energy" src="img/text-logo.svg" alt="Текстовый логотип" height="18" width="101">
+      </a>
+      <!-- Логотип должен быть ссылкой на главную-->
+      <button class="header__toggle header__toggle_burger closed"></button>
     </div>
-    <nav class="header-nav">
+    <nav class="header__nav">
       <ul class="nav-list">
-        <li class="nav-list__item"><a href="#">Главная</a></li>
-        <li class="nav-list__item"><a href="catalog.html">Каталог продукции</a></li>
-        <li class="nav-list__item"><a href="form.html">Подбор программы</a></li>
+        <li>
+          <a class="nav-list__item nav-list__item_botton-border_green nav-list__item_botton-border_white">Главная</a>
+        </li>
+        <li>
+          <a class="nav-list__item nav-list__item_white" href="catalog.html">Каталог продукции</a>
+        </li>
+        <li>
+          <a class="nav-list__item nav-list__item_white" href="form.html">Подбор программы</a>
+        </li>
       </ul>
     </nav>
   </header>
-  <main class="main-page-background">
-    <section class="intro-program container">
-      <h1 class="intro-program__header">Функциональное <br> питание для котов</h1>
+  <main class="cat_background">
+    <section class="intro-program">
+      <h1 class="intro-program__header">Функциональное питание для котов</h1>
       <p class="intro-program__descrptiption">Занялся собой? Займись котом!</p>
-      <img class="intro-program__img" src="img/index_can_chiken_mobile.png"
-        alt="Главная картинка с банкой еды со вкусом курицы" height="270" width="280">
-      <img class="intro-program__img-tablet" src="img/index_can_tablet.png"
-        alt="Главная картинка с банкой еды со вкусом курицы для планшетов" width="709" height="609">
-      <button class="intro-program__button">подобрать программу</button>
+      <img class="intro-program__img" src="img/index_can.png" alt="Главная картинка с банкой еды со вкусом курицы"
+        height="270" width="280"> 
+      <a href="form.html" class="intro-program__link">подобрать программу</a> 
     </section>
-    <section class="slimming__and__weight-gain container">
-      <div class="slimming__and__weight-gain__background">
-        <div class="slimming__and__weight-gain__img__wraper">
-          <img class="slimming__and__weight-gain__img" src="img/slimming_image.png"
-            alt="Картинка на программу похудения" height="53" width="50">
-          <h2 class="slimming__and__weight-gain__header">Похудение</h2>
-        </div>
-        <p class="slimming__and__weight-gain__description">
+    <section class="slimming-and-weight-gain slimming-and-weight-gain_slimming container">
+      <!-- Переименовать по БЭМ-->
+      <div class="slimming-and-weight-gain__background">
+        <h2 class="slimming-and-weight-gain__header slimming-and-weight-gain_slimming_header">Похудение</h2>
+        <p class="slimming-and-weight-gain__description">
           Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
           поможет вашему питомцу сбросить лишний вес.
         </p>
-        <button class="slimming__and__weight-gain__button">Каталог slim <img src="img/arrow.svg" alt="Стрелочка"
-            width="32" height="12"></button>
-        <img class="slimming__and__weight-gain__big-img-tablet" src="img/cat_back_tablet.png"
-          alt="Картинка большой сидящей кошки" width="200" height="211">
+        <a class="slimming-and-weight-gain__button-link">Каталог slim</a>
+        <!-- Вспомнить псевоэлементы! или фоном -->
       </div>
     </section>
-    <section class="slimming__and__weight-gain container">
-      <div class="slimming__and__weight-gain__background">
-        <div class="slimming__and__weight-gain__img-wraper">
-          <img class="slimming__and__weight-gain__img" src="img/weight_gain_image.png"
-            alt="Картинка на программу набора массы" height="50" width="67">
-          <h2 class="slimming__and__weight-gain__header">Набор массы</h2>
-        </div>
-        <p class="slimming__and__weight-gain__description">
+    <section class="slimming-and-weight-gain slimming-and-weight-gain_weight-gain container">
+      <!-- Переименовать по БЭМ-->
+      <div class="slimming-and-weight-gain__background">
+        <h2 class="slimming-and-weight-gain__header slimming-and-weight-gain_weight-gain_header">Набор массы</h2>
+        <p class="slimming-and-weight-gain__description">
           Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
           необходимые мышцы!
         </p>
-        <button class="slimming__and__weight-gain__button">Каталог pro <img src="img/arrow.svg" alt="Стрелочка"
-            width="32" height="10"></button>
-        <img class="slimming__and__weight-gain__big-img-tablet" src="img/cat_tiger_tablet.png"
-          alt="Картинка большого тигра" width="268" height="200">
+        <a class="slimming-and-weight-gain__button-link">Каталог pro </a>
       </div>
     </section>
-    <section class="how-does-it-work container">
+    <section class="how-does-it-work">
       <h2 class="how-does-it-work__header">Как это работает</h2>
       <ul class="how-does-it-work__list">
-        <li class="how-does-it-work__list-item background_number-1">
-          <img class="how-does-it-work__list-item__image" src="img/leaf_icon.svg" alt="Картинка-листочек" height="60"
-            width="60">
-          <p class="how-does-it-work__list-item__description">
+        <li class="how-does-it-work__list-item how-does-it-work__list-item_background-number-one">
+          <img class="list-item__image" src="img/leaf_icon.svg" alt="Картинка-листочек" height="60"
+            width="60"> <!-- Вспомнить псевоэлементы! или фоном -->
+          <p class="list-item_description">
             Функциональное питание
             содержит только полезные
             питательные вещества.
           </p>
         </li>
-        <li class="how-does-it-work__list-item background_number-2">
-          <img class="how-does-it-work__list-item__image" src="img/flask_icon.svg" alt="Картинка-колбочка" height="60"
-            width="60">
-          <p class="how-does-it-work__list-item__description">
+        <li class="how-does-it-work__list-item how-does-it-work__list-item_background-number-two">
+          <img class="list-item_image" src="img/flask_icon.svg" alt="Картинка-колбочка" height="60"
+            width="60"> <!-- Вспомнить псевоэлементы! или фоном -->
+          <p class="list-item_description">
             Выпускается в виде порошка,
             который нужно лишь залить
             кипятком и готово.
           </p>
         </li>
-        <li class="how-does-it-work__list-item background_number-3">
-          <img class="how-does-it-work__list-item__image" src="img/cutlery_icon.svg" alt="Картинка-приборы" height="60"
-            width="60">
-          <p class="how-does-it-work__list-item__description">
+        <li class="how-does-it-work__list-item how-does-it-work__list-item_background-number-three">
+          <img class="list-item_image" src="img/cutlery_icon.svg" alt="Картинка-приборы" height="60"
+            width="60"> <!-- Вспомнить псевоэлементы! или фоном -->
+          <p class="list-item_description">
             Замените один-два приема
             обычной еды на наше
             функциональное питание.
           </p>
         </li>
-        <li class="how-does-it-work__list-item background_number-4">
-          <img class="how-does-it-work__list-item__image" src="img/scales_icon.svg" alt="Картинка-весы" height="60"
-            width="60">
-          <p class="how-does-it-work__list-item__description">
-            Уже через месяц наслаждайтесь изменениями к лучшему вашего
-            питомца!
+        <li class="how-does-it-work__list-item how-does-it-work__list-item_background-number-four">
+          <img class="list-item_image" src="img/scales_icon.svg" alt="Картинка-весы" height="60"
+            width="60"> <!-- Вспомнить псевоэлементы! или фоном -->
+          <p class="list-item_description">
+            Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!
           </p>
         </li>
       </ul>
     </section>
-    <section class="live-example container">
+    <section class="live-example">
       <h2 class="live-example__header">Живой пример</h2>
       <p class="live-example__description">
-        Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на CatEnergy
-        Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнемуспит по 16
+        Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+        Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
         часов в день.
       </p>
-      <div class="live-example__results">
-        <p class="results-weight">5 кг </p>
-        <p class="results-days">60 ДНЕЙ </p>
+      <div class="live-example__results results">
+        <p class="results__weight">
+          5 кг 
+          <span class="results__weight-descr">снижение веса</span>
+        </p>
+        <p class="results__days">
+          60 дней 
+          <span class="results__days-descr">затрачено времени</span>
+        </p>
       </div>
-      <p class="results-money-spent">Затраты на питание: 15 000 РУБ. </p>
-      <div class="life-example__before-and-after">
-        <img class="life-example__before-and-after__img-before" src="img/cat_before_program_mobile_1.png"
-          alt="Картинка кота до программы" height="232" width="311">
-        <img class="life-example__before-and-after__img-after" src="img/cat_after_program_mobile_1.png"
-          alt="Картинка кота после программы" height="232" width="311">
-        <div class="life-example__before-and-after__toggle">
-          <label class="life-example__before-and-after__toggle-decription"><span>Было</span><input
-              class="life-example__before-and-after__toggle"><span>Стало</span></label>
+      <p class="results__money-spent">Затраты на питание: <span>15 000 РУБ.</span> </p>
+      <div class="live-example__before-and-after">
+        <picture>
+          <source srcset="img/two_half_cat.png" media="(min-width: 1440px)">
+          <source srcset="img/two_half_cat.png" media="(min-width: 768px)">
+          <img class="live-example__before-and-after_img" src="img/cat_before_program.png"
+            alt="Картинка кота до программы" height="232" width="311">
+        </picture>
+        <div class=" live-example__before-and-after_toggle before-and-after">
+          <span class="before-and-after__toggle-before">Было</span>
+          <div class="before-and-after__bar"></div>
+          <div class="before-and-after__toggle"></div>
+          <input class="before-and-after__toggle-button" type="checkbox">
+          <span class="before-and-after__toggle-after">Стало</span>
         </div>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <div class="footer__contacts">
-      <h3 class="footer__contacts-header-invite">
-        приглашаем <br>
-        к сотрудничеству дилеров!
+    <div class="footer__contacts footer__contacts_white-background_index">
+      <h3 class="footer__contacts_header-invite">
+        приглашаем к&nbsp;сотрудничеству дилеров!
+        <!-- Неразрывный пробел может заменить br -->
       </h3>
-      <p class="footer__contacts-addres">
+      <p class="footer__contacts_addres">
         ул. Большая
         Конюшенная, д. 19/8
-        Санкт-Петербург
+        <span>
+          Санкт-Петербург
+        </span>
       </p>
     </div>
     <div class="footer__map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603441444461!2d30.320872925980453!3d59.93872221965117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1609585820122!5m2!1sru!2sru"
-        width="320" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
+        width="320" height="362" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"
         class="map"></iframe>
     </div>
-    <div class="footer__links">
-      <a class="footer__link-logo" href="#"><img src="img/text-logo.svg" alt="Картинка с лого" height="24"
-          width="128"></a>
-      <div class="footer__links-social">
-        <div class="footer__links-social__wrapper">
-          <a class="footer__link" href="www.vk.com">
-            <img src="img/icon_vkontakte.svg" alt="Лого вк" height="16" width="23">
-          </a>
-          <a class="footer__link" href="www.Instagram.com">
-            <img src="img/icon_instagram.svg" alt="Лого Instagram" height="16" width="16">
-          </a>
-          <a class="footer__link" href="www.facebook.com">
-            <img src="img/icon_facebook.svg" alt="Лого Facebook">
-          </a>
-        </div>
+    <div class="footer__links links_wrapper">
+      <a class="links_wrapper__logo"><img src="img/text-logo.svg" alt="Картинка с лого" height="24" width="128"></a>
+      <!-- Проверить ссылки, тк может меняться-->
+      <div class="links_wrapper__social">
+        <a class="footer__link" href="www.vk.com">
+          <img src="img/icon_vkontakte.svg" alt="Лого вк" height="16" width="23">
+        </a>
+        <a class="footer__link" href="www.Instagram.com">
+          <img src="img/icon_instagram.svg" alt="Лого Instagram" height="16" width="16">
+        </a>
+        <a class="footer__link" href="www.facebook.com">
+          <img src="img/icon_facebook.svg" alt="Лого Facebook">
+        </a>
       </div>
-      <div class="footer__links-htmlacademy">
+      <div class="links_wrapper__htmlacademy">
         <a class="footer__link-htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">
           HTML Academy
-        </a>
-        <a class="footer__link-img-htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="img/html_academy_logo.png" alt="Лого академии">
+          <img src="img/html_academy_logo.png" alt="Лого академии"> <!-- Отступы всему блоку -->
         </a>
       </div>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
